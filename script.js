@@ -27,3 +27,6 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+
+
+//code written by Aprameyan Krishnan Anantha otherwise known as CipherCircuit9261.
