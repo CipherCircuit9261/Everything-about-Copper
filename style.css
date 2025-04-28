@@ -1,0 +1,162 @@
+/* Reset and base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #fff;
+    color: #1d1d1f;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Colors */
+  :root {
+    --copper: #b87333;
+    --light-gray: #f5f5f7;
+    --text-gray: #6e6e73;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: var(--light-gray);
+    padding: 12px 30px;
+    border-bottom: 1px solid #d2d2d7;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav-content {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    font-size: 14px;
+  }
+  
+  .nav-content a {
+    color: #1d1d1f;
+    padding: 8px;
+    transition: color 0.3s;
+  }
+  
+  .nav-content a:hover,
+  .nav-content a.active {
+    color: var(--copper);
+    font-weight: 600;
+  }
+  
+  /* Hero */
+  .hero {
+    text-align: center;
+    padding: 100px 20px 60px;
+    background-color: #fff;
+  }
+  
+  .hero h1 {
+    font-size: 56px;
+    font-weight: 600;
+    color: var(--copper);
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 20px;
+    color: var(--text-gray);
+    margin-bottom: 30px;
+  }
+  
+  #scrollDownBtn {
+    background-color: var(--copper);
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #scrollDownBtn:hover {
+    background-color: #a15f2e;
+  }
+  
+  /* Main Sections */
+  .section {
+    padding: 80px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .section.light {
+    background-color: var(--light-gray);
+  }
+  
+  .section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--copper);
+  }
+  
+  .section p, .section ul {
+    font-size: 18px;
+    line-height: 1.7;
+  }
+  
+  .section ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  
+  .grid {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .grid div {
+    flex: 1;
+  }
+  
+  /* Atomic Structure Style */
+  .atomic-structure {
+    margin-top: 20px;
+  }
+  
+  .atomic-structure h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--copper);
+  }
+  
+  .atomic-structure ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .atomic-structure li {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #1d1d1f;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 30px;
+    background-color: var(--light-gray);
+    font-size: 14px;
+    color: var(--text-gray);
+    border-top: 1px solid #d2d2d7;
+  }
+  
